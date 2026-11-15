@@ -150,28 +150,83 @@ div[data-testid="stMetricValue"] {
     font-weight: 700;
 }
 
+/* ==========================================
+   KAWAII PASTEL FINISHING TOUCHES 🌷
+========================================== */
 
-/* แถบเมนู */
+/* Tabs */
 .stTabs [data-baseweb="tab"] {
     color: #80658F;
+    font-family: 'Mali', sans-serif;
     font-weight: 600;
+    border-radius: 12px 12px 0 0;
+    padding: 10px 18px;
 }
 
 .stTabs [aria-selected="true"] {
-    color: var(--raspberry) !important;
+    color: #F26190 !important;
+    border-bottom-color: #F26190 !important;
 }
 
-/* ช่องเลือกข้อมูล */
+/* Select boxes */
 div[data-baseweb="select"] > div {
-    border-radius: 12px;
-    border-color: var(--lilac);
+    background: #FFFFFF;
+    border: 2px solid #E7BEF8;
+    border-radius: 14px;
+    color: #665264;
 }
 
-/* เส้นแบ่ง */
+/* Dropdown menu */
+div[data-baseweb="popover"] {
+    border-radius: 14px;
+}
+
+/* Dividers */
 hr {
     border-color: #E7BEF8;
+    opacity: 0.8;
 }
 
+/* Checkbox */
+.stCheckbox label {
+    color: #665264;
+    font-family: 'Mali', sans-serif;
+    font-weight: 500;
+}
+
+/* Radio buttons */
+.stRadio label {
+    color: #665264;
+    font-family: 'Mali', sans-serif;
+}
+
+/* Success messages */
+div[data-testid="stAlert"] {
+    border-radius: 16px;
+    border: 1px solid #E7BEF8;
+}
+
+/* Expander */
+.streamlit-expanderHeader {
+    background: #F8ECFF;
+    border-radius: 14px;
+    color: #80658F;
+    font-family: 'Mali', sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E7BEF8;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #FFF8FB;
+}
 
 /* KAWAII SIDEBAR 🌷 */
 

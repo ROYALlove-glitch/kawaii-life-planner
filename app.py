@@ -57,23 +57,41 @@ p, label, .stMarkdown {
     color: var(--text);
 }
 
-/* ปุ่มหลัก */
+
+/* KAWAII PASTEL BUTTONS 🍓 */
+
 .stButton > button {
-    background: var(--raspberry);
+    background: linear-gradient(
+        135deg,
+        #F26190,
+        #E7BEF8
+    );
     color: white;
-    border: none;
-    border-radius: 18px;
+    border: 2px solid #F26190;
+    border-radius: 20px;
     padding: 10px 22px;
-    font-weight: 600;
-    transition: 0.2s;
+    font-family: 'Mali', sans-serif;
+    font-weight: 700;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(242, 97, 144, 0.18);
 }
 
 .stButton > button:hover {
-    background: #DD4778;
+    background: linear-gradient(
+        135deg,
+        #E7BEF8,
+        #93ABD9
+    );
     color: white;
-    border: none;
-    transform: translateY(-2px);
+    border: 2px solid #93ABD9;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(147, 171, 217, 0.25);
 }
+
+.stButton > button:active {
+    transform: scale(0.97);
+}
+
 
 /* ช่องกรอกข้อมูล */
 .stTextInput input,

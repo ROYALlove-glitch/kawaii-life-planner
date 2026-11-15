@@ -85,15 +85,39 @@ p, label, .stMarkdown {
     color: var(--text);
 }
 
-/* การ์ดสถิติและฟอร์ม */
-div[data-testid="stMetric"],
-div[data-testid="stForm"] {
-    background: white;
-    border: 1px solid #F3DDFB;
-    border-radius: 18px;
-    padding: 15px;
-    box-shadow: 0 3px 12px rgba(160, 120, 190, 0.10);
+
+/* KAWAII PASTEL CARDS 🍓 */
+
+div[data-testid="stMetric"] {
+    background: linear-gradient(135deg, #FFFFFF, #FFF0F5);
+    border: 2px solid #F26190;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 0 4px 12px rgba(242, 97, 144, 0.12);
 }
+
+div[data-testid="stForm"] {
+    background: #FFFFFF;
+    border: 2px solid #E7BEF8;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 0 4px 12px rgba(180, 140, 210, 0.12);
+}
+
+div[data-testid="stAlert"] {
+    border-radius: 16px;
+}
+
+div[data-testid="stMetricLabel"] {
+    color: #80658F;
+    font-weight: 600;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #F26190;
+    font-weight: 700;
+}
+
 
 /* แถบเมนู */
 .stTabs [data-baseweb="tab"] {

@@ -140,11 +140,34 @@ hr {
     border-color: #E7BEF8;
 }
 
-/* แถบ Sidebar */
+
+/* KAWAII SIDEBAR 🌷 */
+
 section[data-testid="stSidebar"] {
-    background: #F8EEFF;
+    background: linear-gradient(
+        180deg,
+        #F8ECFF 0%,
+        #F0F4FF 100%
+    );
+    border-right: 2px solid #E7BEF8;
 }
 
+/* เมนู Sidebar */
+section[data-testid="stSidebar"] label {
+    color: #80658F;
+    font-weight: 600;
+}
+
+/* เมนูที่เลือก */
+section[data-testid="stSidebar"] [aria-checked="true"] {
+    background-color: #E7BEF8;
+    border-radius: 12px;
+}
+
+/* เส้นแบ่ง Sidebar */
+section[data-testid="stSidebar"] hr {
+    border-color: #93ABD9;
+}
 /* ตัวเลขสถิติ */
 div[data-testid="stMetricValue"] {
     color: var(--raspberry);

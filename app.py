@@ -12,6 +12,101 @@ st.set_page_config(
     layout="centered"
 )
 
+# ==========================================
+# KAWAII PINK THEME 🌷
+# ==========================================
+
+st.markdown("""
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Mali', sans-serif;
+}
+
+/* พื้นหลังเว็บไซต์ */
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #FFF0F5 0%,
+        #FFF8F0 50%,
+        #FFE4EC 100%
+    );
+}
+
+/* หัวข้อ */
+h1, h2, h3 {
+    color: #C65D83 !important;
+    font-weight: 700 !important;
+}
+
+/* ข้อความทั่วไป */
+p, label, .stMarkdown {
+    color: #70515E;
+}
+
+/* ปุ่ม */
+.stButton > button {
+    background-color: #F4A7C0;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    padding: 10px 22px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.stButton > button:hover {
+    background-color: #E987A8;
+    color: white;
+    border: none;
+    transform: translateY(-2px);
+}
+
+/* ช่องกรอกข้อมูล */
+.stTextInput input,
+.stTextArea textarea,
+.stNumberInput input {
+    background-color: #FFFFFF;
+    border: 1px solid #F3C5D5;
+    border-radius: 12px;
+}
+
+/* กล่องการ์ด */
+div[data-testid="stMetric"],
+div[data-testid="stForm"] {
+    background-color: #FFFFFF;
+    border: 1px solid #F7D6E1;
+    border-radius: 18px;
+    padding: 15px;
+    box-shadow: 0 3px 12px rgba(220, 130, 160, 0.10);
+}
+
+/* เส้นแบ่ง */
+hr {
+    border-color: #F3C5D5;
+}
+
+/* แถบเมนู */
+.stTabs [data-baseweb="tab"] {
+    color: #C65D83;
+    font-weight: 600;
+}
+
+.stTabs [aria-selected="true"] {
+    color: #D85D8A !important;
+}
+
+/* กล่องเลือกข้อมูล */
+div[data-baseweb="select"] > div {
+    border-radius: 12px;
+    border-color: #F3C5D5;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 st.title("🌷 Kawaii Life Planner")
 st.write("Your little steps to a happier life!")
 

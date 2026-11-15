@@ -92,17 +92,31 @@ p, label, .stMarkdown {
     transform: scale(0.97);
 }
 
+/* KAWAII PASTEL INPUTS 🌷 */
 
-/* ช่องกรอกข้อมูล */
 .stTextInput input,
 .stTextArea textarea,
 .stNumberInput input {
-    background: white;
-    border: 1px solid var(--lilac);
-    border-radius: 12px;
-    color: var(--text);
+    background: #FFFFFF;
+    border: 2px solid #E7BEF8;
+    border-radius: 15px;
+    color: #665264;
+    font-family: 'Mali', sans-serif;
+    transition: all 0.2s ease;
 }
 
+.stTextInput input:focus,
+.stTextArea textarea:focus,
+.stNumberInput input:focus {
+    border-color: #F26190;
+    box-shadow: 0 0 0 3px rgba(242, 97, 144, 0.12);
+}
+
+/* Placeholder */
+.stTextInput input::placeholder,
+.stTextArea textarea::placeholder {
+    color: #B9A8C3;
+}
 
 /* KAWAII PASTEL CARDS 🍓 */
 

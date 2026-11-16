@@ -12,6 +12,26 @@ st.set_page_config(
     layout="centered"
 )
 
+# ==========================================
+# ปรับขนาดตัวอักษรเมนู Sidebar
+# ==========================================
+
+st.markdown("""
+<style>
+
+/* เพิ่มขนาดตัวอักษรเมนู */
+[data-testid="stSidebar"] [data-testid="stRadio"] label p {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+}
+
+/* เพิ่มระยะห่างระหว่างเมนู */
+[data-testid="stSidebar"] [data-testid="stRadio"] label {
+    padding: 8px 4px !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 # ==========================================
 # KAWAII PASTEL POP THEME 🍓

@@ -1447,6 +1447,14 @@ if st.session_state.user:
                                 "หน่วย",
                                 value=goal["unit"]
                             )
+							edit_target_date = st.date_input(
+							    "📅 วันครบกำหนด",
+							    value=(
+							        date.fromisoformat(str(goal["target_date"])[:10])
+							        if goal.get("target_date")
+							        else date.today()
+							    )
+							)
 
                             edit_submitted = st.form_submit_button(
                                 "💾 บันทึกการแก้ไข"
@@ -1482,6 +1490,7 @@ if st.session_state.user:
                                         "target_value": updated_target,
                                         "current_value": updated_current,
                                         "unit": edit_unit.strip(),
+										"target_date": str(edit_target_date),
                                         "status": updated_status
                                     }).eq(
                                         "id", goal["id"]
